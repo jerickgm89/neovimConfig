@@ -1,0 +1,29 @@
+{
+    "coc.preferences.formatOnSaveFiletypes": [
+        "css",
+        "markdown",
+        "python",
+        "html",
+        "js",
+        "htmldjango",
+        "vue",
+        "json",
+        "jsx"
+    ],
+    "emmet.includeLanguages": {
+        "htmldjango": "html"
+    },
+    "html.enable": true,
+    "html.filetypes": [
+        "html",
+        "handlebars",
+        "htmldjango"
+    ],
+    "html.format.enable": true,
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django",
+        "--load-plugins=pylint_django.checkers.migrations",
+        "--errors-only"
+    ],
+    "python.jediPath": "/usr/lib/python3.9/site-packages"
+}
