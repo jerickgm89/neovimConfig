@@ -1,5 +1,3 @@
-" Specify a directory for plugins
-"
 " - For Neovim: stdpath('data') . '/plugged'
 call plug#begin(stdpath('data').'/plugged')
 
@@ -33,7 +31,10 @@ call plug#begin(stdpath('data').'/plugged')
 
     " post install (yarn install | npm install) then load plugin only for editing supported files
     Plug 'prettier/vim-prettier', { 'do': 'npm install' }
-
+    
+    "Polyglot
+    Plug 'sheerun/vim-polyglot' 
+    
     " Surround.vim
     Plug 'tpope/vim-surround'
 
@@ -41,14 +42,20 @@ call plug#begin(stdpath('data').'/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
 
+    " Control de luces para teclado Razer
     Plug 'https://github.com/DanManN/vim-razer'
 
+    " Para navegar entre nerdtree y los archivos
     Plug 'christoomey/vim-tmux-navigator'
 
+    " Eastmotion
     Plug 'easymotion/vim-easymotion'
-
-    Plug 'sonph/onehalf', { 'rtp': 'vim' }
- 
+    
+    " Boostrap 4 Snippets
+    Plug 'jvanja/vim-bootstrap4-snippets'
+    
+    " Rainbow Parenthesis
+    Plug 'vim-scripts/Rainbow-Parenthesis'
 
     " Other themes 
     Plug 'gruvbox-community/gruvbox'
@@ -56,6 +63,8 @@ call plug#begin(stdpath('data').'/plugged')
     Plug 'phanviet/vim-monokai-pro'
     Plug 'flazz/vim-colorschemes'
     Plug 'tomasiser/vim-code-dark'
+    Plug 'sonph/onehalf', { 'rtp': 'vim' }
+    Plug 'joshdick/onedark.vim'
 
     " NERDCommenter 
     Plug 'preservim/nerdcommenter'

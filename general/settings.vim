@@ -32,6 +32,8 @@ set nobackup
 set undofile
 execute 'set undodir=' . g:nvim_data_root . '/undodir'
 
+set nocompatible
+
 " Python virtual environment detection in linux
 let g:loaded_python_provider = 0
 " let g:loaded_python3_provider = 0
